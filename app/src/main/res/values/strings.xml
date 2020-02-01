@@ -3,7 +3,7 @@
     <string-array name="CountryList">
         <item>Россия</item>
         <item>Украина</item>
-        <item>Булорусия</item>
+        <item>Булоруссия</item>
     </string-array>
     <string-array name="RussiaCityList">
         <item>Москва</item>
@@ -11,14 +11,14 @@
         <item>Казань</item>
     </string-array>
     <string-array name="UkraineCityList">
-        <item>Россия</item>
-        <item>Украина</item>
-        <item>Булорусия</item>
+        <item>Киев</item>
+        <item>Одесса</item>
+        <item>Харьков</item>
     </string-array>
     <string-array name="BelarusCityList">
-        <item>Россия</item>
-        <item>Украина</item>
-        <item>Булорусия</item>
+        <item>Минск</item>
+        <item>Гомель</item>
+        <item>Торжок</item>
     </string-array>
 
 </resources>

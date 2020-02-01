@@ -44,14 +44,16 @@ public class MainActivity extends AppCompatActivity {
     }
     private void initHousNumbersSpinner(){
         Integer[] houseNumbers = new Integer[50];
-        for (int i = 1; i <= 50; i++) {
+        for (int i = 1; i <= houseNumbers.length; i++) {
             houseNumbers[i - 1] = i;
         }
-        ArrayAdapter<Integer> adapter = new ArrayAdapter<Integer>(this, android.R.layout.simple_spinner_item, houseNumbers);
+        ArrayAdapter<Integer> adapter = new ArrayAdapter<>(this,
+                android.R.layout.simple_spinner_item, houseNumbers);
         mHouseNumberSpinner.setAdapter(adapter);
     }
     private void initSpinnerCountries() {
-        ArrayAdapter<CharSequence> adapterCountries = ArrayAdapter.createFromResource(this, R.array.CountryList, android.R.layout.simple_spinner_item);
+        ArrayAdapter<CharSequence> adapterCountries = ArrayAdapter.createFromResource(this,
+                R.array.CountryList, android.R.layout.simple_spinner_item);
         adapterCountries.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         mCountriesSpinner.setAdapter(adapterCountries);
 
@@ -70,13 +72,16 @@ public class MainActivity extends AppCompatActivity {
         ArrayAdapter<CharSequence> adapter = null;
         switch (country) {
             case "Россия":
-                adapter = ArrayAdapter.createFromResource(this, R.array.RussiaCityList, android.R.layout.simple_spinner_item);
+                adapter = ArrayAdapter.createFromResource(this, R.array.RussiaCityList,
+                        android.R.layout.simple_spinner_item);
                 break;
             case "Украина":
-                adapter = ArrayAdapter.createFromResource(this, R.array.UkraineCityList, android.R.layout.simple_spinner_item);
+                adapter = ArrayAdapter.createFromResource(this, R.array.UkraineCityList,
+                        android.R.layout.simple_spinner_item);
                 break;
             case "Белоруссия":
-                adapter = ArrayAdapter.createFromResource(this, R.array.BelarusCityList, android.R.layout.simple_spinner_item);
+                adapter = ArrayAdapter.createFromResource(this, R.array.BelarusCityList,
+                        android.R.layout.simple_spinner_item);
                 break;
         }
         if (adapter != null) {
